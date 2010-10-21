@@ -50,7 +50,7 @@ my %dispatch_table = (
         return sub {
             my $content = shift // '';
             "<$tag_name" . ( length $content ? ">$content</$tag_name>" : "/>" );
-          }
+        };
     },
 );
 
