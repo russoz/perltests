@@ -3,6 +3,7 @@ package MyPackage;
 
 use Net::Server;
 use base 'Net::Server';
+use Data::Dumper;
 
 sub process_request {
     my $self = shift;
@@ -11,6 +12,7 @@ sub process_request {
         print "You said '$_'\r\n";    # basic echo
         last if /quit/i;
     }
+    print STDERR Dumper($self);
 }
 
 MyPackage->run( port => 16000 );
