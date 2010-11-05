@@ -1,0 +1,28 @@
+version: 1
+
+dn: CN=Alexei Znamensky,OU=SnakeOil,OU=Extranet,DC=sa,DC=mynet,DC=net
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Alexei Znamensky
+accountExpires: 129290832000000000
+badPasswordTime: 129253228359870323
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+description: Consultant - SnakeOil Brazil on Extranet
+displayName: Alexei Znamensky
+distinguishedName: CN=Alexei Znamensky,OU=SnakeOil,OU=Extranet,DC=sa,DC=mynet,DC=net
+givenName: Alexei
+lastLogoff: 0
+logonCount: 684
+manager: CN=John Doe,OU=SnakeOil,OU=Extranet,DC=na,DC=mynet,DC=net
+memberOf: CN=g_SPO_ADM_WAS,OU=AD_Based_Apps,OU=GROUPS,OU=SPO,DC=sa,DC=mynet,DC=net
+name: Alexei Znamensky
+sn: Znamensky
+userPrincipalName: ZnamensA@mynet.net
+uSNChanged: 160358095
+uSNCreated: 144230343
+whenChanged: 20100906002534.0Z
+whenCreated: 20100318194403.0Z
