@@ -18,5 +18,5 @@ say $numbers;
 say Dumper(@ids);
 say Dumper(@distros);
 say $url;
-say $kwalitee;
+say Dumper($kwalitee);
 
