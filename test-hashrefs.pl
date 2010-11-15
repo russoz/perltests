@@ -19,3 +19,6 @@ map { $hash->{$_} = $ref->{$_} } qw/b d f g/;
 print Data::Dumper->Dump( [$ref], ['ref'] );
 print Data::Dumper->Dump( [$hash], ['hash'] );
 #print Data::Dumper->Dump( [\%h2], ['h2'] );
+
+@{$other}{qw/b d f g/} = @{$ref}{qw/b d f g/};
+print Data::Dumper->Dump( [$other], ['other'] );
