@@ -16,8 +16,8 @@ sub showtz {
 
 showtz;
 
-showtz( 'America/Los_Angeles' );
-showtz( 'Europe/Paris' );
-showtz( 'US/Pacific' );
+showtz('America/Los_Angeles');
+showtz('Europe/Paris');
+showtz('US/Pacific');
 
 showtz;

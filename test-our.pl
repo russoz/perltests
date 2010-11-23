@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-my  $a = 10;
+my $a = 10;
 our $b = 20;
 
 sub t {

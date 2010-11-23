@@ -3,8 +3,8 @@
 use lib '.';
 
 #eval {
-    #use A qw/rrr/;
-    #A::blah();
+#use A qw/rrr/;
+#A::blah();
 #};
 #warn $@ if $@;
 

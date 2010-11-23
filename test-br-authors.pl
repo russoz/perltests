@@ -13,7 +13,6 @@ my @distros  = $authors->distributions('RUSSOZ');
 my $url      = $authors->avatar_url('RUSSOZ');
 my $kwalitee = $authors->kwalitee('RUSSOZ');
 
-
 say $numbers;
 say Dumper(@ids);
 say Dumper(@distros);

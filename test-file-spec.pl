@@ -9,6 +9,7 @@ sub mostra {
           . File::Spec::$os->catfile( File::Spec::$os->rootdir(), 'tmp', 'grande',
             'abobora' );
           };
+
         # File::Spec::VMS is known to fail - if you really wanna see the error
         #   message, uncomment the line below
         #warn $@ if $@;

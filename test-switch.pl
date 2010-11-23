@@ -12,9 +12,9 @@ sub work {
     #my $max = 1000 * 1000 * 1000 * 1000;
     my $max = 100;
 
-    for( my $i = 0; $i < $max; $i++ ) {
+    for ( my $i = 0 ; $i < $max ; $i++ ) {
         $r = $r + $i * rand $i;
-        $r = $r ** $i;
+        $r = $r**$i;
     }
     return $p . ' => ' . $r;
 }

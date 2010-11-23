@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-                                           $_='ev
+$_ = 'ev
                                        al("seek\040D
            ATA,0,                  0;");foreach(1..3)
        {<DATA>;}my               @camel1hump;my$camel;
@@ -19,8 +19,15 @@ _=<DATA>)){@camel1hum        p=split(//);}while(@dromeda
       064\065\066\067\070/;y/12345678/JL7F\175\173\047`/;$_=reverse;
        print"$_\040$Camel\n";}foreach(@camel1hump){chomp;$Camel=$_;y
         /LJF7\173\175`\047/12345678/;y/12345678/JL7F\175\173\0 47`/;
-         $_=reverse;print"\040$_$Camel\n";}';;s/\s*//g;;eval;   eval
-           ("seek\040DATA,0,0;");undef$/;$_=<DATA>;s/\s*//g;(   );;s
+         $_=reverse;print"\040$_$Camel\n";}';
+s/\s*//g;
+eval;
+eval("seek\040DATA,0,0;");
+undef $/;
+$_ = <DATA>;
+s/\s*//g;
+();
+s
              ;^.*_;;;map{eval"print\"$_\"";}/.{4}/g; __DATA__   \124
                \1   50\145\040\165\163\145\040\157\1 46\040\1  41\0
                     40\143\141  \155\145\1 54\040\1   51\155\  141

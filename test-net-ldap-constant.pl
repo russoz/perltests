@@ -24,6 +24,6 @@ sub _make_result {
     };
 }
 
-$a = _make_result( qw/LDAP_INAPPROPRIATE_AUTH/ );
+$a = _make_result(qw/LDAP_INAPPROPRIATE_AUTH/);
 
 print Dumper($a);

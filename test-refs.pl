@@ -10,8 +10,8 @@ my @list = ();
 
 push @list, 'xyz';
 push @list, $ref;
-my %deref = %{ $ref };
-push @list, %{ $ref };
+my %deref = %{$ref};
+push @list, %{$ref};
 
 print Dumper(@list);
 
