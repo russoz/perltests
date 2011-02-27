@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "This is printed to stdout"
+
+echo "But this, on the other hand, goes to stderr" >&2
+
+echo "just to make sure: STDOUT"
+echo "just to make sure: STDERR" >&2
