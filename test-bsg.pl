@@ -1,6 +1,8 @@
 #!/usr/bin/perl
-use 5.010;
 
-*so = *{ say 'so say we all' };
+sub so($) { print 'so '. $_[0] . "\n"; }
+sub say($) { 'say '. $_[0]; }
+sub we($) { 'we '. $_[0]; }
+*all = *{'all'};
 
-so;
+so say we all;
