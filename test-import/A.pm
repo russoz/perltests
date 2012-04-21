@@ -1,6 +1,6 @@
 package A;
 
-our $plug = undef;
+our $plug      = undef;
 our $inheriter = undef;
 
 sub import {

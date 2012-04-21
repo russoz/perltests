@@ -7,14 +7,14 @@ package A;
 use Moose;
 
 has 'p' => (
-  is => 'ro',
-  isa => 'CodeRef',
-  builder => '_p_build',
+    is      => 'ro',
+    isa     => 'CodeRef',
+    builder => '_p_build',
 );
 
 sub _p_build {
-	say 'A p builder';
-	return sub { say 'A p' };
+    say 'A p builder';
+    return sub { say 'A p' };
 }
 
 package B;
@@ -23,8 +23,8 @@ use Moose;
 extends 'A';
 
 sub _p_build {
-	say 'B p builder';
-	return sub { say 'B p' };
+    say 'B p builder';
+    return sub { say 'B p' };
 }
 
 package main;

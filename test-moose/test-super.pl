@@ -4,20 +4,22 @@ use 5.010;
 
 package A;
 
-    use Moose;
-    has attr => ( is => 'rw', isa => 'Str',);
-    sub thereis { say 'A::thereis'; return shift; }
+use Moose;
+has attr => ( is => 'rw', isa => 'Str', );
+sub thereis { say 'A::thereis'; return shift; }
 
 package B;
 
-    use Moose; extends 'A';
-    has sky => ( is => 'rw', isa => 'Str',);
-    sub another {
-        my $me = shift;
-        A::thereis($me);
-        say 'B::another '.@_;
-        return $me;
-    }
+use Moose;
+extends 'A';
+has sky => ( is => 'rw', isa => 'Str', );
+
+sub another {
+    my $me = shift;
+    A::thereis($me);
+    say 'B::another ' . @_;
+    return $me;
+}
 
 package main;
 

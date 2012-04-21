@@ -7,8 +7,8 @@ package ABC;
 use Moose;
 
 has a => (
- is => 'ro',
- isa => 'Str',
+    is  => 'ro',
+    isa => 'Str',
 );
 
 package main;

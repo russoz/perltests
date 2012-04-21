@@ -11,7 +11,7 @@ sub makesub {
         my $arg = shift;
         local $_ = $arg;
         $sub->();
-      };
+    };
 }
 
 package main;

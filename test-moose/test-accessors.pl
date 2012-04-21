@@ -5,17 +5,17 @@ use Data::Dumper;
 
 package A;
 
-    use Moose;
+use Moose;
 
-    has intguy => ( is => 'rw', isa => 'Int' );
-    has strguy => ( is => 'rw', isa => 'Str' );
+has intguy => ( is => 'rw', isa => 'Int' );
+has strguy => ( is => 'rw', isa => 'Str' );
 
 package main;
 
 my $a = A->new;
 
-$a->intguy( '42' );
-$a->strguy( 57 );
+$a->intguy('42');
+$a->strguy(57);
 
 print Dumper($a);
 

@@ -2,9 +2,10 @@
 
 use 5.010;
 use integer;
+
 #use List::Util qw/reduce/;
 
-@v = map { int(rand(100)) } 1 .. 20;
+@v = map { int( rand(100) ) } 1 .. 20;
 
 $, = ', ';
 say @v;

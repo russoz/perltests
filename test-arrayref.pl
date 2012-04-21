@@ -18,9 +18,9 @@ $ref = [qw/a b c d e/];
 
 p $ref;
 p $ref->[0];
-p $ref->[1,2];
-p $ref->[1 ... 2];
+p $ref->[ 1, 2 ];
+p $ref->[ 1 ... 2 ];
 say 'deref+index first ', p ${$ref}[0];
-say 'deref+index last ', p ${$ref}[-1];
-say 'deref+indices-comma ', (${$ref}[0,1]);
-say 'deref+indices-ellip ', (${$ref}[0 ... 3]);
+say 'deref+index last ',  p ${$ref}[-1];
+say 'deref+indices-comma ', ( ${$ref}[ 0, 1 ] );
+say 'deref+indices-ellip ', ( ${$ref}[ 0 ... 3 ] );

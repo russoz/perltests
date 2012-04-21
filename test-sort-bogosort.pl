@@ -43,11 +43,15 @@ sub a_fmt {
 }
 
 my $numelem = shift || die q{usage: test-sort-bogosort.pl <num_elem> [times]};
-my $times = shift || 1;
+my $times   = shift || 1;
 
-timethis( $times, sub {
-	my $randomlist = make_random($numelem);
-	my $result     = bogosort($randomlist);
-	#print a_fmt($result);
-});
+timethis(
+    $times,
+    sub {
+        my $randomlist = make_random($numelem);
+        my $result     = bogosort($randomlist);
+
+        #print a_fmt($result);
+    }
+);
 
