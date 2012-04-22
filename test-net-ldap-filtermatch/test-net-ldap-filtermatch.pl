@@ -10,6 +10,7 @@ die $ldif->error if $ldif->error;
 $entry->dump;
 say '-' x 70;
 
+use Data::Dumper;
 use Net::LDAP::Filter;
 use Net::LDAP::FilterMatch;
 
@@ -18,11 +19,13 @@ sub search {
 
 	my $filter = Net::LDAP::Filter->new( $f );
 	unless( $filter ) {
-		say STDERR Net::LDAP::Filter::errstr();
+		say STDERR 'Cannot build filter: '.Net::LDAP::Filter::errstr();
 		return;
 	}
-	print $filter->match($entry) ? '   Match' : 'NO Match';
+	my $match = $filter->match($entry);
+	print $match ? '   Match' : 'NO Match';
 	say sprintf( ' [ %60s ]', $f );
+	print STDERR Dumper($filter) unless $match;
 }
 
 search( '(cn=Alexei Znamensky)' );
@@ -34,3 +37,6 @@ search( '(dn=CN=Alexei Znamensky)');
 search( '(dn:CN=Alexei Znamensky)');
 search( '(dn=*)');
 search( ':dn=*');
+search( 'cn:dn:=Alexei Znamensky' );
+search( 'cn:dn:=*Znamensky' );
+search( 'cn:dn:=*' );
